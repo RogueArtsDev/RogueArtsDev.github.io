@@ -1,0 +1,117 @@
+body {	/* Sets minumum width for the screen */
+	min-width: 520px; 
+	font-size: 20px;
+}
+
+.navbar-nav li a:hover {  /* Causes the links on the navbar to turn a light blue colour when hovered over */
+    color: #1abc9c !important;
+}
+
+.col-centered { /* Sets bootstrap columns to display inline with eachother */
+	display:inline-block;
+	float:none;
+}
+
+.fa { /* sets general layout of social media icons, also makes them round */
+ 	padding: 20px;
+	font-size: 25px;
+	height: 60px;
+  	width: 60px;
+  	text-align: center;
+	text-decoration: none !important; 
+  	border-radius: 50%;
+}
+
+.fa-facebook{ /* gives iconic facebook background */
+	background-color: #3B5998;
+	color: white;
+}
+
+.fa-twitter { /* gives iconic twitter background */
+  	background: #55ACEE;
+  	color: white;
+}
+
+#intro_container { /* Sets padding for page content */
+	padding-left: 4%;
+}
+
+#team_container { /* Sets padding for team container */
+	padding-left: 6%;
+}
+
+#navbar_logo{ /* centres team logo */
+	margin-left: 27%;
+}
+
+hr {   /* Gives horizontal rows a different border */
+	border: 0;
+	border-top: 4px double #8C8C8C;
+}
+
+h4 { /* Aligns header text to center */
+	text-align: center;
+}
+
+.p-content { /* sets minimum text width for paragraphs used in page*/
+	text-align: justify;
+	min-width: 210px;
+}
+
+.body-img{ /* Sets max size of images used in the body */
+	max-height: 400px;
+	max-width: 400px;
+}
+
+.overlay{ /* Positions overlay over video to darken it slightly*/
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	background-color: black;
+  	opacity: 0.5;
+  	z-index: 1;
+}
+
+.text-overlay{ /* Sets position of text and makes it appear in front of the video and overlay*/
+	position: relative;
+	z-index: 2 !important;
+}
+
+.vid-holder{ /* Sets size of div that holds video */
+	height: 100vh;
+    	width: 100vh;
+   	min-width: 100%;
+  	min-height: 100%;
+    	overflow: hidden;
+    	position: relative;
+}
+
+.fullscreen-vid{ /* Sets size of video inside of div, also sets position*/
+   	min-width: 100%;
+  	min-height: 100%;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translateX(-50%) translateY(-50%);
+	z-index: 0;
+	object-fit: fill;
+}
+
+.fullscreen-link{ /* Makes the entirety of the div a link*/
+ position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 3;
+}
+
+.caption{
+	position: absolute;
+	top: 45%;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+}
