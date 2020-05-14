@@ -60,3 +60,12 @@ p {
 .carousel-inner img { /* Sets margin to be auto for each carousel img */
 	margin: auto;
 }
+
+.card-img-top{
+	
+	height: 15vw;
+}
+
+.card{
+	max-width: 400px;
+}
