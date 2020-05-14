@@ -62,10 +62,16 @@ p {
 }
 
 .card-img-top{
-	
-	height: 15vw;
+	width: 100%;
 }
 
-.card{
+.card{ /* stops bottom 3 cards from stretching out */
 	max-width: 400px;
+}
+
+@media (max-width: 576px) { /* on smaller screens, set the card width to full screen */
+    .card{
+	width: 100%;
+	max-width: 100%;
+}
 }
